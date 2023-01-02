@@ -1,12 +1,11 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- Link to schema: https://app.quickdatabasediagrams.com/#/d/uk9uzU
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
+﻿-- Creating database tables & Schemas
 
 
 
+CREATE DATABASE Pizza;
 
 
-
+-- Creating the order table
 CREATE TABLE Orders (
     row_id INT  NOT NULL ,
     order_id VARCHAR(10)  NOT NULL ,
@@ -19,7 +18,7 @@ CREATE TABLE Orders (
     PRIMARY KEY ( row_id )
 );
 
-
+-- Creating the customer table
 CREATE TABLE customers (
     cust_id int  NOT NULL ,
     cust_firstname VARCHAR(50)  NOT NULL ,
@@ -27,6 +26,7 @@ CREATE TABLE customers (
     PRIMARY KEY ( cust_id )
 );
 
+-- Creating the address table
 CREATE TABLE address (
     add_id int  NOT NULL ,
     delivery_address VARCHAR(200)  NOT NULL ,
@@ -36,6 +36,7 @@ CREATE TABLE address (
 );
 
 
+-- Creating the item table
 CREATE TABLE item (
     item_id VARCHAR(10)  NOT NULL ,
     SKU VARCHAR(20)  NOT NULL ,
@@ -47,6 +48,7 @@ CREATE TABLE item (
 );
 
 
+-- Creating the ingredient table
 CREATE TABLE ingredient (
     ing_id VARCHAR(10)  NOT NULL ,
     ing_name VARCHAR(100)  NOT NULL ,
@@ -56,6 +58,7 @@ CREATE TABLE ingredient (
     PRIMARY KEY ( ing_id )
 );
 
+-- Creating the receipe table
 CREATE TABLE receipe(
     row_id int  NOT NULL ,
     recipe_id VARCHAR(20)  NOT NULL ,
@@ -64,6 +67,7 @@ CREATE TABLE receipe(
     PRIMARY KEY ( row_id)
 );
 
+-- Creating the invatory table
 CREATE TABLE inventory (
     inv_id int  NOT NULL ,
     item_id VARCHAR(10)  NOT NULL ,
@@ -71,6 +75,7 @@ CREATE TABLE inventory (
     PRIMARY KEY (inv_id)
 );
 
+-- Creating the rota table
 CREATE TABLE rota (
     row_id int  NOT NULL ,
     rota_id VARCHAR(20)  NOT NULL ,
@@ -80,6 +85,7 @@ CREATE TABLE rota (
     PRIMARY KEY ( row_id )
 );
 
+-- Creating the staff table
 CREATE TABLE staff (
     staff_id VARCHAR(20)  NOT NULL ,
     first_name VARCHAR(20)  NOT NULL ,
@@ -89,6 +95,7 @@ CREATE TABLE staff (
     PRIMARY KEY ( staff_id )
 );
 
+-- Creating the shift table
 CREATE TABLE shift (
     shift_id VARCHAR(20)  NOT NULL ,
     ay_of_week VARCHAR(20)  NOT NULL ,
@@ -96,6 +103,8 @@ CREATE TABLE shift (
     end_time time  NOT NULL ,
     PRIMARY KEY ( shift_id )
 );
+
+-- Adding constraints and foreign keys
 
 ALTER TABLE orders ADD CONSTRAINT  FOREIGN KEY(item_id)
 REFERENCES item (item_id);
