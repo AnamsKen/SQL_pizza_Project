@@ -1,0 +1,30 @@
+add_id,delivery_address1,delivery_address2,delivery_city,delivery_zipcode
+1,"1 lagos street, lagos",NULL,Lagos,10110
+2,"2 lagos street, lagos",NULL,Lagos,10111
+3,"3 lagos street, lagos",NULL,Lagos,10112
+4,"4 lagos street, lagos",NULL,Lagos,10113
+5,"5 lagos street, lagos",NULL,Lagos,10114
+6,"6 lagos street, lagos",NULL,Lagos,10115
+7,"7 lagos street, lagos",NULL,Lagos,10116
+8,"8 lagos street, lagos",NULL,Lagos,10117
+9,"9 lagos street, lagos",NULL,Lagos,10118
+10,"10 lagos street, lagos",NULL,Abuja,10119
+11,"11 lagos street, lagos",NULL,Abuja,10120
+12,"12 lagos street, lagos",NULL,Abuja,10121
+13,"13 lagos street, lagos",NULL,Abuja,10122
+14,"5 lagos street, lagos",NULL,Abuja,10123
+15,"6 lagos street, lagos",NULL,Abuja,10124
+16,"7 lagos street, lagos",NULL,Port harcourt,10125
+17,"8 lagos street, lagos",NULL,Port harcourt,10126
+18,"9 lagos street, lagos",NULL,Port harcourt,10127
+19,"10 lagos street, lagos",NULL,Port harcourt,10128
+20,"11 lagos street, lagos",NULL,Port harcourt,10129
+21,"12 lagos street, lagos",NULL,Port harcourt,10130
+22,"13 lagos street, lagos",NULL,Port harcourt,10131
+23,"14 lagos street, lagos",NULL,Owerri,10132
+24,"1 lagos street, lagos",NULL,Owerri,10133
+25,"2 lagos street, lagos",NULL,Owerri,10134
+26,"3 lagos street, lagos",NULL,Owerri,10135
+27,"4 lagos street, lagos",NULL,Owerri,10136
+28,"5 lagos street, lagos",NULL,Ibadan,10137
+29,"6 lagos street, lagos",NULL,Ibadan,10138
